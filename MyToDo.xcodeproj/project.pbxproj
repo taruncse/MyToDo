@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		4FF05AE826133AC000122E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05AE726133AC000122E27 /* AppDelegate.swift */; };
 		4FF05AEA26133AC000122E27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05AE926133AC000122E27 /* SceneDelegate.swift */; };
-		4FF05AEC26133AC000122E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05AEB26133AC000122E27 /* ViewController.swift */; };
+		4FF05AEC26133AC000122E27 /* LoginTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05AEB26133AC000122E27 /* LoginTopViewController.swift */; };
 		4FF05AEF26133AC000122E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF05AED26133AC000122E27 /* Main.storyboard */; };
 		4FF05AF126133AC100122E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF05AF026133AC100122E27 /* Assets.xcassets */; };
 		4FF05AF426133AC100122E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF05AF226133AC100122E27 /* LaunchScreen.storyboard */; };
 		4FF05AFF26133AC100122E27 /* MyToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05AFE26133AC100122E27 /* MyToDoTests.swift */; };
 		4FF05B0A26133AC200122E27 /* MyToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B0926133AC200122E27 /* MyToDoUITests.swift */; };
+		4FF05B2226135B3300122E27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B2126135B3300122E27 /* AppCoordinator.swift */; };
+		4FF05B2726135B4700122E27 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B2626135B4700122E27 /* Coordinator.swift */; };
+		4FF05B2C26135BB000122E27 /* LoginTopCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B2B26135BB000122E27 /* LoginTopCoordinator.swift */; };
+		4FF05B3226135BC600122E27 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B3126135BC600122E27 /* Common.swift */; };
+		4FF05B3726135C0900122E27 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B3626135C0900122E27 /* Storyboarded.swift */; };
+		4FF05B3C26135C6D00122E27 /* LoginTopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B3B26135C6C00122E27 /* LoginTopViewModel.swift */; };
+		4FF05B4126135C7E00122E27 /* LoginTopViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B4026135C7E00122E27 /* LoginTopViewModelProtocol.swift */; };
+		4FF05B602613602800122E27 /* LoginTopModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B5F2613602800122E27 /* LoginTopModelProtocol.swift */; };
+		4FF05B652613610500122E27 /* LoginTopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B642613610500122E27 /* LoginTopModel.swift */; };
+		4FF05B99261395D000122E27 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF05B98261395D000122E27 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 		4FF05AE426133AC000122E27 /* MyToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF05AE726133AC000122E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FF05AE926133AC000122E27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FF05AEB26133AC000122E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FF05AEB26133AC000122E27 /* LoginTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTopViewController.swift; sourceTree = "<group>"; };
 		4FF05AEE26133AC000122E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FF05AF026133AC100122E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FF05AF326133AC100122E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,16 @@
 		4FF05B0526133AC100122E27 /* MyToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF05B0926133AC200122E27 /* MyToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoUITests.swift; sourceTree = "<group>"; };
 		4FF05B0B26133AC200122E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF05B2126135B3300122E27 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4FF05B2626135B4700122E27 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4FF05B2B26135BB000122E27 /* LoginTopCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTopCoordinator.swift; sourceTree = "<group>"; };
+		4FF05B3126135BC600122E27 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4FF05B3626135C0900122E27 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		4FF05B3B26135C6C00122E27 /* LoginTopViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTopViewModel.swift; sourceTree = "<group>"; };
+		4FF05B4026135C7E00122E27 /* LoginTopViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTopViewModelProtocol.swift; sourceTree = "<group>"; };
+		4FF05B5F2613602800122E27 /* LoginTopModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTopModelProtocol.swift; sourceTree = "<group>"; };
+		4FF05B642613610500122E27 /* LoginTopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTopModel.swift; sourceTree = "<group>"; };
+		4FF05B98261395D000122E27 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +119,14 @@
 		4FF05AE626133AC000122E27 /* MyToDo */ = {
 			isa = PBXGroup;
 			children = (
+				4FF05B1D26135B0800122E27 /* Models */,
+				4FF05B1E26135B1100122E27 /* Views */,
+				4FF05B1F26135B1600122E27 /* ViewModels */,
+				4FF05B2026135B2100122E27 /* Coordinators */,
+				4FF05B3026135BB600122E27 /* Commons */,
+				4FF05B6F2613760A00122E27 /* DataProvider */,
 				4FF05AE726133AC000122E27 /* AppDelegate.swift */,
 				4FF05AE926133AC000122E27 /* SceneDelegate.swift */,
-				4FF05AEB26133AC000122E27 /* ViewController.swift */,
-				4FF05AED26133AC000122E27 /* Main.storyboard */,
 				4FF05AF026133AC100122E27 /* Assets.xcassets */,
 				4FF05AF226133AC100122E27 /* LaunchScreen.storyboard */,
 				4FF05AF526133AC100122E27 /* Info.plist */,
@@ -126,6 +150,60 @@
 				4FF05B0B26133AC200122E27 /* Info.plist */,
 			);
 			path = MyToDoUITests;
+			sourceTree = "<group>";
+		};
+		4FF05B1D26135B0800122E27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FF05B642613610500122E27 /* LoginTopModel.swift */,
+				4FF05B5F2613602800122E27 /* LoginTopModelProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FF05B1E26135B1100122E27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FF05AEB26133AC000122E27 /* LoginTopViewController.swift */,
+				4FF05AED26133AC000122E27 /* Main.storyboard */,
+				4FF05B3626135C0900122E27 /* Storyboarded.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FF05B1F26135B1600122E27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FF05B4026135C7E00122E27 /* LoginTopViewModelProtocol.swift */,
+				4FF05B3B26135C6C00122E27 /* LoginTopViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4FF05B2026135B2100122E27 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4FF05B2626135B4700122E27 /* Coordinator.swift */,
+				4FF05B2126135B3300122E27 /* AppCoordinator.swift */,
+				4FF05B2B26135BB000122E27 /* LoginTopCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		4FF05B3026135BB600122E27 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				4FF05B3126135BC600122E27 /* Common.swift */,
+				4FF05B98261395D000122E27 /* APIConstants.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		4FF05B6F2613760A00122E27 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF05AEC26133AC000122E27 /* ViewController.swift in Sources */,
+				4FF05B2C26135BB000122E27 /* LoginTopCoordinator.swift in Sources */,
+				4FF05B2226135B3300122E27 /* AppCoordinator.swift in Sources */,
+				4FF05B99261395D000122E27 /* APIConstants.swift in Sources */,
+				4FF05AEC26133AC000122E27 /* LoginTopViewController.swift in Sources */,
+				4FF05B652613610500122E27 /* LoginTopModel.swift in Sources */,
+				4FF05B2726135B4700122E27 /* Coordinator.swift in Sources */,
 				4FF05AE826133AC000122E27 /* AppDelegate.swift in Sources */,
 				4FF05AEA26133AC000122E27 /* SceneDelegate.swift in Sources */,
+				4FF05B602613602800122E27 /* LoginTopModelProtocol.swift in Sources */,
+				4FF05B3226135BC600122E27 /* Common.swift in Sources */,
+				4FF05B3726135C0900122E27 /* Storyboarded.swift in Sources */,
+				4FF05B3C26135C6D00122E27 /* LoginTopViewModel.swift in Sources */,
+				4FF05B4126135C7E00122E27 /* LoginTopViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

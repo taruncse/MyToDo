@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyToDo
 //
-//  Created by DreamOnline on 30/3/21.
+//  Created by Tarun on 31/03/21.
 //
 
 import UIKit
@@ -10,7 +10,8 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var coordinator: Coordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
